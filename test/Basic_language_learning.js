@@ -171,5 +171,33 @@ describe('Basic language learning', function () {
 				assert.equal(append('foo'), 'foobar');
 			});
 		});
+
+		describe('String comparison', function () {
+			const path = require('path').join(
+				'../',
+				'src/',
+				'Basic_language_learning/',
+				'Basic_data_operations/',
+				'String_comparison'
+			);
+
+			const compare = require(path);
+
+			it('foo should be equal foo', function () {
+				assert.equal(compare('foo', 'foo').equal, true);
+			});
+
+			it('foo should not be equal bar', function () {
+				assert.equal(compare('foo', 'bar').not_equal, true);
+			});
+
+			it('foo should be greater than bar', function () {
+				assert.equal(compare('foo', 'bar').greater, true);
+			});
+
+			it('bar should be less than foo', function () {
+				assert.equal(compare('foo', 'bar').less, false);
+			});
+		});
 	});
 });
