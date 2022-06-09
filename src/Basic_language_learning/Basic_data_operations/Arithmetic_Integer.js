@@ -2,12 +2,12 @@ const arithmetic = (a, b) => {
     a = parseInt(a);
     b = parseInt(b);
 
-    if (a === NaN) {
-        throw 'Failed to parse number a.';
+    if (String(a) == String(NaN)) {
+        throw 'Failed to parse a.';
     }
 
-    if (b === NaN) {
-        throw 'Failed to parse number b.';
+    if (String(b) == String(NaN)) {
+        throw 'Failed to parse b.';
     }
 
     return {

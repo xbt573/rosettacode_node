@@ -1,6 +1,6 @@
 const factors = (int) => {
 	int = parseInt(int);
-	if (int === NaN) {
+	if (String(int) == String(NaN)) {
 		throw 'Failed to parse integer.';
 	}
 

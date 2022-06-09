@@ -2,11 +2,11 @@ const bitwise = (a, b) => {
 	a = parseInt(a);
 	b = parseInt(b);
 
-	if (a === NaN) {
+	if (String(a) == String(NaN)) {
 		throw 'Failed to parse a.';
 	}
 
-	if (b === NaN) {
+	if (String(b) == String(NaN)) {
 		throw 'Failed to parse b.';
 	}
 

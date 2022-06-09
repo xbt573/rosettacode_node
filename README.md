@@ -12,7 +12,7 @@ Problem solutions from rosettacode.org in JavaScript (node.js)
 		- [ ] Conjugate a Latin verb
 		- [x] Create an object at a given address (impossible)
 		- [x] Factors of an integer
-		- [ ] Integer comparison
+		- [x] Integer comparison
 		- [ ] Logical operations
 		- [x] Pointers and references (maybe impossible)
 		- [ ] String append
