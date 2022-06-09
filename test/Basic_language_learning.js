@@ -255,5 +255,42 @@ describe('Basic language learning', function () {
 				assert.equal(prepend('bar'), 'barfoo');
 			});
 		});
+
+		describe('Substring', function () {
+			const path = require('path').join(
+				'../',
+				'src/',
+				'Basic_language_learning/',
+				'Basic_data_operations/',
+				'Substring'
+			);
+
+			const substring = require(path);
+			const result = substring('blahblahtestblah',
+									 5,
+									 7,
+									 't',
+									 'test');
+
+			it('from_n_to_m should be "la"', function () {
+				assert.equal(result.from_n_to_m, 'la');
+			});
+
+			it('from_n_to_end should be "lahtestblah"', function () {
+				assert.equal(result.from_n_to_end, 'lahtestblah');
+			});
+
+			it('end_minus_one should be "blahblahtestbla"', function () {
+				assert.equal(result.end_minus_one, 'blahblahtestbla');
+			});
+
+			it('from_known_char should be "h"', function () {
+				assert.equal(result.from_known_char, 'h');
+			});
+
+			it('from_known_sub should be "h"', function () {
+				assert.equal(result.from_known_sub, 'h');
+			});
+		});
 	});
 });

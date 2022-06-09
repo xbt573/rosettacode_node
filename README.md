@@ -21,4 +21,4 @@ Problem solutions from rosettacode.org in JavaScript (node.js)
   		- [x] String interpolation (included)
   		- [x] String matching
   		- [x] String prepend
-  		- [ ] Substring
+  		- [x] Substring
