@@ -239,5 +239,21 @@ describe('Basic language learning', function () {
 				assert.equal(match('hello world', 'world').ends, true);
 			});
 		});
+
+		describe('String prepend', function () {
+			const path = require('path').join(
+				'../',
+				'src/',
+				'Basic_language_learning/',
+				'Basic_data_operations/',
+				'String_prepend'
+			);
+
+			const prepend = require(path);
+
+			it('should be "barfoo"', function () {
+				assert.equal(prepend('bar'), 'barfoo');
+			});
+		});
 	});
 });

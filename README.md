@@ -20,5 +20,5 @@ Problem solutions from rosettacode.org in JavaScript (node.js)
   		- [x] String concatenation (i think it's duplicate of append)
   		- [x] String interpolation (included)
   		- [x] String matching
-  		- [ ] String prepend
+  		- [x] String prepend
   		- [ ] Substring
