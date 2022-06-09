@@ -155,5 +155,21 @@ describe('Basic language learning', function () {
 				assert.equal(logic(5, 10).not, false);
 			});
 		});
+
+		describe('String append', function () {
+			const path = require('path').join(
+				'../',
+				'src/',
+				'Basic_language_learning/',
+				'Basic_data_operations/',
+				'String_append'
+			);
+
+			const append = require(path);
+
+			it('should be equal "foobar"', function () {
+				assert.equal(append('foo'), 'foobar');
+			});
+		});
 	});
 });

@@ -15,7 +15,7 @@ Problem solutions from rosettacode.org in JavaScript (node.js)
 		- [x] Integer comparison
 		- [x] Logical operations
 		- [x] Pointers and references (maybe impossible)
-		- [ ] String append
+		- [x] String append
 		- [ ] String comparison
 		- [ ] String concatenation
 		- [ ] String interpolation (included)
