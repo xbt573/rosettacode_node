@@ -19,6 +19,6 @@ Problem solutions from rosettacode.org in JavaScript (node.js)
   		- [x] String comparison
   		- [x] String concatenation (i think it's duplicate of append)
   		- [x] String interpolation (included)
-  		- [ ] String matching
+  		- [x] String matching
   		- [ ] String prepend
   		- [ ] Substring

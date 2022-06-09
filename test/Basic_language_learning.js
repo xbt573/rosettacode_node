@@ -215,5 +215,29 @@ describe('Basic language learning', function () {
 				assert.equal(interpolate('bar'), 'foobar');
 			});
 		});
+
+		describe('String matching', function () {
+			const path = require('path').join(
+				'../',
+				'src/',
+				'Basic_language_learning/',
+				'Basic_data_operations/',
+				'String_matching'
+			);
+
+			const match = require(path);
+
+			it('"hello world" should start with "hello"', function () {
+				assert.equal(match('hello world', 'hello').starts, true);
+			});
+
+			it('"hello world" should contain "hello"', function () {
+				assert.equal(match('hello world', 'hello').contains, true);
+			});
+
+			it('"hello world" should end with "world"', function () {
+				assert.equal(match('hello world', 'world').ends, true);
+			});
+		});
 	});
 });
