@@ -199,5 +199,21 @@ describe('Basic language learning', function () {
 				assert.equal(compare('foo', 'bar').less, false);
 			});
 		});
+
+		describe('String interpolation', function () {
+			const path = require('path').join(
+				'../',
+				'src/',
+				'Basic_language_learning/',
+				'Basic_data_operations/',
+				'String_interpolation'
+			);
+
+			const interpolate = require(path);
+
+			it('should be equal to "foobar"', function () {
+				assert.equal(interpolate('bar'), 'foobar');
+			});
+		});
 	});
 });

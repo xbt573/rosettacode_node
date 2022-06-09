@@ -17,8 +17,8 @@ Problem solutions from rosettacode.org in JavaScript (node.js)
   		- [x] Pointers and references (maybe impossible)
   		- [x] String append
   		- [x] String comparison
-  		- [ ] String concatenation
-  		- [ ] String interpolation (included)
+  		- [x] String concatenation (i think it's duplicate of append)
+  		- [x] String interpolation (included)
   		- [ ] String matching
   		- [ ] String prepend
   		- [ ] Substring
