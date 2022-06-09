@@ -13,7 +13,7 @@ Problem solutions from rosettacode.org in JavaScript (node.js)
 		- [x] Create an object at a given address (impossible)
 		- [x] Factors of an integer
 		- [x] Integer comparison
-		- [ ] Logical operations
+		- [x] Logical operations
 		- [x] Pointers and references (maybe impossible)
 		- [ ] String append
 		- [ ] String comparison

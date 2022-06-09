@@ -1,5 +1,4 @@
 const assert = require('assert');
-const expect = require('expect').expect;
 
 describe('Basic language learning', function () {
 	describe('Basic data operations', function () {
@@ -32,18 +31,6 @@ describe('Basic language learning', function () {
 
 			it('remainder should be equal 5', function () {
 				assert.equal(arithmetic(5, 10).remainder, 5);
-			});
-
-			it('passing string as "a" should throw exception', function () {
-				const dummy = () => arithmetic('blahblahblah', 10);
-
-				expect(dummy).toThrow('Failed to parse a.');
-			});
-
-			it('passing string as "b" should throw exception', function () {
-				const dummy = () => arithmetic(10, 'blahblahblah');
-
-				expect(dummy).toThrow('Failed to parse b.');
 			});
 		});
 
@@ -80,18 +67,6 @@ describe('Basic language learning', function () {
 
 			it('right shift should be equal 0', function () {
 				assert.equal(bitwise(5, 10).right_shift, 0);
-			});
-
-			it('passing string as "a" should throw exception', function () {
-				const dummy = () => bitwise('blahblahblah', 10);
-
-				expect(dummy).toThrow('Failed to parse a.');
-			});
-
-			it('passing string as "b" should throw exception', function () {
-				const dummy = () => bitwise(10, 'blahblahblah');
-
-				expect(dummy).toThrow('Failed to parse b.');
 			});
 		});
 
@@ -131,12 +106,6 @@ describe('Basic language learning', function () {
 			it('factors should be equal [1, 3, 191, 573]', function () {
 				assert.equal(String(factors(573)), String([1, 3, 191, 573]));
 			});
-
-			it('should throw exception if string is given', function () {
-				const dummy = () => factors('blahblahblah');
-
-				expect(dummy).toThrow('Failed to parse integer.');
-			});
 		});
 
 		describe('Integer comparison', function () {
@@ -161,17 +130,29 @@ describe('Basic language learning', function () {
 			it('10 should be equal 10', function () {
 				assert.equal(compare(10, 10), 'equal');
 			});
+		});
 
-			it('passing string as "a" should throw exception', function () {
-				const dummy = () => compare('blahblahblah', 10);
+		describe('Logical operations', function () {
+			const path = require('path').join(
+				'../',
+				'src/',
+				'Basic_language_learning/',
+				'Basic_data_operations/',
+				'Logical_operations'
+			);
 
-				expect(dummy).toThrow('Failed to parse a.');
+			const logic = require(path);
+
+			it('5 and 10 should be equal 10', function () {
+				assert.equal(logic(5, 10).and, 10);
 			});
 
-			it('passing string as "b" should throw exception', function () {
-				const dummy = () => compare(10, 'blahblahblah');
+			it('5 or 10 should be equal 5', function () {
+				assert.equal(logic(5, 10).or, 5);
+			});
 
-				expect(dummy).toThrow('Failed to parse b.');
+			it('not 5 should be equal false', function () {
+				assert.equal(logic(5, 10).not, false);
 			});
 		});
 	});

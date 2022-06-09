@@ -8,15 +8,4 @@ const compare = (list) => {
 	return outlist;
 };
 
-if (require.main == module) {
-	const list = ["abcd","123456789","abcdef","1234567"];
-	const results = compare(list);
-
-	results.forEach((element) => {
-		console.log(`String: "${element.string}"`);
-		console.log(`Length: ${element.length}`);
-		console.log('');
-	});
-}
-
 module.exports = compare;
